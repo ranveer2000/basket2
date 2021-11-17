@@ -13,7 +13,6 @@ var fruit1_img, fruit2_img, fruit3_img, fruit4_img, fruit5_img;
 var player_img;
 var player1score =0;
 var player2score =0;
-var theme;
 
 var obstacleGroup,obstacle,obstacleImage;
 
@@ -26,7 +25,6 @@ function preload(){
   fruit4_img = loadImage("images/orange2.png");
   fruit5_img = loadImage("images/pineapple2.png");
   fruitGroup = new Group();
-  theme = loadSound("theme.mp3");
 
   obstacleImage = loadImage("images/mushroom.png")
 }
@@ -36,7 +34,6 @@ function setup() {
   game = new Game();
   game.getState();
   game.start();
-  theme.loop();
 }
 
 function draw() {
